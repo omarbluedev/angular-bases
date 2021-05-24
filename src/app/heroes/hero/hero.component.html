@@ -1,0 +1,25 @@
+<h1>{{nameHR}}</h1>
+
+<dl>
+
+    <td>Name: </td>
+    <dd> {{ nameHR }} </dd>
+
+    <td>Age: </td>
+    <dd> {{ age }} </dd>
+
+    <td>Method: </td>
+    <dd> {{ getName() }} </dd>
+
+    <td>Uppercase name: </td>
+    <dd> {{ getUppercaseName }} </dd>
+
+</dl>
+
+<button (click)="changeName()">
+    Change Hero Name
+</button>
+
+<button (click)="changeAge()">
+    Change Age
+</button>

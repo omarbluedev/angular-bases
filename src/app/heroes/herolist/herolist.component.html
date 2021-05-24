@@ -1,0 +1,21 @@
+<p>herolist</p>
+
+<ul>
+    <li *ngFor="let hero of heroesMarvel; let i = index">
+        {{i}} {{hero}}
+    </li>
+</ul>
+
+<div *ngIf="heroEliminated !== ''; else noEliminated">
+    <h3>The eliminated hero is: <small>{{heroEliminated}}</small> </h3>
+
+</div>
+
+<ng-template #noEliminated>
+    <h3>No deleted items</h3>
+</ng-template>
+
+
+<button (click)="deleteHero()">
+    Delete Hero
+</button>
